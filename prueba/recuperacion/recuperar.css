@@ -1,0 +1,87 @@
+body {
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-recuperar {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.form-recuperar h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #ffcc00;
+}
+
+.form-recuperar input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-recuperar input:focus {
+    border-color: #ffcc00;
+    background-color: #1f1f1f;
+}
+
+.form-recuperar .boton {
+    margin-top: 15px;
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-recuperar .boton:hover {
+    background-color: #ffaa00;
+    transform: scale(1.02);
+}
+
+.form-recuperar a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.form-recuperar a:hover {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
